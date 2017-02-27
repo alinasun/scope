@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alina Sun</title>
+		<meta name="author" content="Alina Sun">
+		<meta name="description" content="Alina Sun, Student, Computer Science, Travel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="style.css">
+		<link href='//fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	</head>
+	<body>
+		
+
+		<div class="container-fluid">
+
+			<nav class="navbar navbar-default" id="nav">
+				<div class="container-fluid">
+					<div class="navbar-header">
+
+					</div>
+					<ul id="navbar"></ul>
+					<ul id="navbar-left"?></ul>
+				</div>
+			</nav>
+
+			<div id="about" class="col-md-12">
+
+				<br>
+				<div id="name">hi i'm alina</div><br><br>
+
+				<div class="container text-center">
+			        <div class="social-media">
+			          <div class="col-sm-4">
+			            <a href="https://www.instagram.com/fun_in_the_sun95/"><img class="headshot hvr hvr-grow" id="icon" src="img/instagram.jpg"/></a>
+			            <!-- <h2 id="title-1">Instagram</h2> -->
+			          </div>
+			          <div class="col-sm-4">
+			            <a href="https://www.facebook.com/alina.sun.16"><img class ="headshot hvr hvr-grow" id="icon" src="img/facebook-bw.jpg"/></a>
+			            <!-- <h2 id="title-2">Facebook</h2> -->
+			          </div>
+			          <div class="col-sm-4">
+			            <a href="https://www.linkedin.com/in/sunalina/"><img class ="headshot hvr hvr-grow" id="icon" src="img/linkedin.jpg"/></a>
+			            <!-- <h2 id="title-3">LinkedIn</h2> -->
+			          </div>
+			        </div>
+			    </div>
+			    <br>
+			    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			</div>	
+
+			<div id="two-thirds column" class="col-md-8">
+				<div class="portfolio">
+					<h2>Professional Experience</h2>
+					<h3 class='title'><a href="http://www.ashinaga.org/en/">Ashinaga Uganda</a></h3><h4>Science Instructor and Mentor</h4> 
+					<p>Ashinaga Uganda is Ashinaga's branch focused on providing higher education and cultural immersion to Sub-Saharan orphans</p>
+
+					<h3 class='title'><a href="http://www.j2global.com/">j2 Global</a></h3><h4>Software Engineering Intern</h4> 
+					<p>j2 Global is a publicly traded cloud services, unified communications, and digital media company </p>
+
+					<h3 class='title'><a href="https://saas.usc.edu/">USC Student Athlete Academic Services</a></h3><h4>Student Tutor</h4> 
+					<p>Organization at USC that provides academic support to student athletes</p>					
+
+					<h3 class='title'><a href="http://www.romanculture.org/">American Institute of Roman Culture</a></h3><h4>Research Intern</h4>
+					<p>American non-profit that works to preserve and protect Rome’s extraordinary cultural legacy via education, outreach and conservation</p>
+
+					<h3 class='title'><a href="http://www.ashinaga.org/en/">Ashinaga</a></h3><h4>Marketing Intern</h4>
+					<p>Japan's largest non-profit focused on providing education to orphans across Japan and Sub-Saharan Africa</p>
+
+					<h2>Campus Involvement</h2>
+					<h3 class='title'><a href="http://www.dozusc.org/">Delta Omicron Zeta</a></h3> <h4>Active Member</h4>
+					<p>USC's leadership fraternity focused on fostering personal growth in a diverse community of leaders</p>
+
+				</div>
+			</div>
+
+			<div id="photography" class="col-md-12">
+				<div id="img-gal" class="col-sm-12">
+				  
+				    <img src="img/hike.jpg" alt="Mt Blanc" >
+				  
+				</div>
+
+				<div id="img-gal" class="col-sm-12">
+				  
+				    <img src="img/lake.jpg" alt="Lake" >
+				  
+				</div>
+
+				<div id="img-gal" class="col-sm-12">
+				  
+				    <img src="img/monaco.jpg" alt="Monaco" >
+				  
+				</div>
+
+			</div>
+		</div>
+
+		
+
+
+
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+			var navbarContents = ['about ', 'photography ', 'travel'];
+
+			var navbarItems ='';
+			for(var i = 0; i < navbarContents.length; i++){
+				navbarItems += '<a href="#'+ navbarContents[i]+'" class="navbar-options">'+ navbarContents[i] +'</a>';
+			}
+
+			console.log(navbarItems);
+			$('#navbar').html(navbarItems);
+
+
+			function changeGradient(){
+				document.getElementById('about').style = 'background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);'
+
+			};
+
+			var navbarContents = ['about', 'photography', 'travel'];
+			
+			/*
+			function setNavBar(){
+				var navbarItems ='';
+				for(var i = 0; i < 3; i++){
+					navbarItems += '<a href="#" class="navbar-options">'+ navbarContents[i] +'</a>';
+				}
+				console.log(navbarItems);
+				$('#navbar').html(navbarItems);
+			}*/
+		</script>
+	</body>
+</html>
